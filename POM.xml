@@ -2,14 +2,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-
    <name>Enterprise Quote Clearance</name>
    <groupId>com.esb.soapui</groupId>
    <artifactId>EnterpriseQClearance</artifactId>
    <version>1.0-SNAPSHOT</version>
    <packaging>jar</packaging>
    <description>Enterprise Quote Clearance</description>  
-
   <pluginRepositories>  
   <pluginRepository>
         <id>smartbear-sweden-plugin-repository</id>
@@ -32,17 +30,17 @@
                </execution>
             </executions>                       
             <configuration>
-               <projectFile>C:\Anand\DevOps\QClearance\src\test\soapui\EnterpriseClearanceService-soapui-project.xml</projectFile>
-      <testSuite>TestSuite 1</testSuite>
-      <testCase>DCItems</testCase>
-      <endpoint>http://esbserver.com:7800/EntClearanceService/EnterpriseClearanceService</endpoint>               
+               <projectFile>C:\Users\konopinp\Downloads\coi\TestSoapUI\test-soapui-project.xml</projectFile>
+      <testSuite>TestSuite1</testSuite>
+      <testCase>TestCase1</testCase>
+      <endpoint>http://localhost/WcfService123/Service1.svc</endpoint>               
                <outputFolder>${project.build.directory}/surefire-reports</outputFolder>
                <junitReport>true</junitReport>
-               <printReport>false</printReport>
+               <printReport>true</printReport>
                <projectProperties>
                   <projectProperty>NameInsured=IBM</projectProperty>
                </projectProperties>
-      <settingsFile>C:\Anand\DevOps\QClearance\src\test\soapui\soapui-settings.xml</settingsFile>
+				<settingsFile>C:\Anand\DevOps\QClearance\src\test\soapui\soapui-settings.xml</settingsFile>
             </configuration>
          </plugin>   
       </plugins>
